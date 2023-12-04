@@ -1,0 +1,12 @@
+{
+  "name": "autosize-textarea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "autosize-textarea.js",
+  "scripts": {
+    "start": "npx http-server . -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
