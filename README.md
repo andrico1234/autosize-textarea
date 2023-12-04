@@ -32,3 +32,15 @@ npm install autosize-textarea
 The web component applies the `rows` attribute to the textarea element when it is first created, which sets the initial height to fit the content. Becuase the component could register after the textarea is rendered on the page, you may see the textarea change height once the component registers.
 
 To mitigate this, you can apply the `rows` attribute to the textarea element yourself, or set the `rows` attribute to `1` in the html.
+
+---
+## Sponsor
+
+Learn to build a component library using minimal tech with [Component Odyssey](https://component-odyssey.com/). As a result, you'll:
+
+- Become a more future-proof web developer
+- Build components that your users will love
+- Boost your career opportunities
+- Learn to do more with less
+
+---
