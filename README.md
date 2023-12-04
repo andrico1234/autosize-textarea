@@ -16,29 +16,19 @@ npm install autosize-textarea
 
 ```html
 <head>
-  <script type="module" src="./autosize-textarea.js"></script>
-  <style>
-    textarea {
-      resize: none;
-    }
-  </style>
+  <script type="module" src="./node_modules/autosize-textarea/autosize-textarea.js"></script>
 </head>
 <body>
   <autosize-textarea>
     <textarea rows="1" placeholder="Type something here..."></textarea>
   </autosize-textarea>
 </body>
-</html>
 ```
 
 ## Gotchas
 
-- The component will not resize if the `rows` attribute is set. This is because the component will not know how many rows to resize to. If you want to set the initial number of rows, use the `lines` attribute instead.
+### `rows` attribute
 
-- usage
+The web component applies the `rows` attribute to the textarea element when it is first created, which sets the initial height to fit the content. Becuase the component could register after the textarea is rendered on the page, you may see the textarea change height once the component registers.
 
-- gotchas
-
-
-- remove resize in the css
-- set lines = "1" in the html, we do it when setting up, but because the component registers later, you'll see the textarea change height
+To mitigate this, you can apply the `rows` attribute to the textarea element yourself, or set the `rows` attribute to `1` in the html.
