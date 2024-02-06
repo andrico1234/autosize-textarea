@@ -23,6 +23,10 @@ class AutosizeTextarea extends HTMLElement {
   connectedCallback() {
     const textareaEl = this.querySelector('textarea');
 
+    if (document.readyState === "loading") {
+      return document.addEventListener("readystatechange", this.connectedCallback.bind(this), { once: true })
+    }
+
     if (textareaEl) {
       textareaEl.style.resize = 'none';
       textareaEl.addEventListener('input', this.handleTextareaChange);
