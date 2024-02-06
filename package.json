@@ -5,6 +5,7 @@
   "main": "autosize-textarea.js",
   "scripts": {
     "start": "npx http-server . -c-1",
+    "test": "exit 0",
     "release": "np"
   },
   "keywords": [],
