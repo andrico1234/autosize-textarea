@@ -4,7 +4,8 @@
   "description": "",
   "main": "autosize-textarea.js",
   "scripts": {
-    "start": "npx http-server . -c-1"
+    "start": "npx http-server . -c-1",
+    "release": "np"
   },
   "keywords": [],
   "author": "",
